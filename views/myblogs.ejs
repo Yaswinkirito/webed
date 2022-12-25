@@ -1,0 +1,27 @@
+<%- include('./partials/navbar.ejs') %>
+    <div class="bg-[#FFFFFF] min-h-screen">
+        <div class="pt-20">
+            <div class="text-3xl text-black grid place-items-center">
+                Hey here you can view your blogs once signed in
+            </div>
+           <div class="grid gap-5 place-items-center text-black rounded-md bg-[#ef5ef5]">
+            <% for(let i=0; i< blogs.length; i++) { %>
+            <div class="card grid place-items-center">
+                <div class="date">
+                    <%= blogs[i].date %>
+                </div>
+                <div class="name">
+                    <%= blogs[i].name %>
+                </div>
+                <div class="description">
+                    <%= blogs[i].content %>
+                </div>
+            </div>
+            <% } %>
+           </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

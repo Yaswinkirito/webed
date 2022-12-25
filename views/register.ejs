@@ -1,0 +1,39 @@
+<%- include('./partials/navbar.ejs') %>
+    <div class="grid min-h-screen place-items-center bg-[#FFFFFF]">
+        <form class="border rounded-md shadow-xl bg-[#ef5ef5] p-20" action="/register" method="POST">
+            <div class="flex items-center justify-center text-black font-bold uppercase">register</div>
+            <div class="form-control">
+                <label class="label">
+                    <span class="label-text text-black">Your Username</span>
+                </label>
+                <label class="input-group">
+                    <span>Username</span>
+                    <input type="text" placeholder="Username" class="input input-bordered" name="name" />
+                </label>
+            </div>
+            <div class="form-control">
+                <label class="label">
+                    <span class="label-text text-black">Your Email</span>
+                </label>
+                <label class="input-group">
+                    <span>Email</span>
+                    <input type="text" placeholder="info@site.com" class="input input-bordered" name="email" />
+                </label>
+            </div>
+            <div class="form-control">
+                <label class="label">
+                    <span class="label-text text-black">Password</span>
+                </label>
+                <label class="input-group">
+                    <span>Password</span>
+                    <input type="text" placeholder="*******" class="input input-bordered" name="password" />
+                </label>
+            </div>
+            <div class="grid place-items-center mt-10">
+                <button class="btn btn-success" type="submit">Sign up</button>
+            </div>
+        </form>
+    </div>
+    </body>
+
+    </html>
